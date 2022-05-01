@@ -1,0 +1,27 @@
+import math
+print(' this is in com plete')
+sides = int(input('Enter Number of sides. '))
+sidelength = int(input('Enter side length '))
+if sidelength == 0:
+    angle = int(input('Central angle equals? '))
+    print (angle)   
+perimeter = sides * sidelength 
+print (f'perimeter equals {perimeter}')  
+apothem = int(input('Enter apothem length '))
+if apothem == 0:
+    symbol=input('is radius given or is x given ')
+    angle = int(input('Central angle equals? '))
+    tr_angle = angle / 2
+    radian = tr_angle * math.pi / 180
+    print (radian)
+    if symbol == 'radius':
+        radius = int(input('Radius length '))
+        poop = math.cos(radian)#need to convert degrees to radians 
+        y = poop*radius
+        print (2*y)
+    elif symbol == 'x':
+        x = int(input('x side equals? '))
+        pee = math.sin(radian)
+        side = 2*x*pee
+        print(side)
+
